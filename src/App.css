@@ -56,7 +56,7 @@ main{
   padding: 20px;
 }
 
-.reserve-button{
+.reserve-button, .online-menu{
   background-color: #f4ce14;
   border: none;
   color: black;
@@ -83,4 +83,117 @@ main{
 .text{
   color: #edefee;
   font-weight: 500;
+}
+
+footer{
+  background-color: #333333;
+  padding: 1vh;
+  color: #edefee;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+#footer-right {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-section {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.item {
+  width: 256px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #edefee;
+  border-radius: 16px;
+}
+
+.item img {
+  max-width: 100%;
+  height: 32vh;
+  border-radius: 12px;
+}
+
+.name-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price {
+  margin-left: 10px;
+  font-size: x-large;
+  font-weight: bold;
+  color: #ee9972;
+}
+
+.description {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.item button {
+  background-color: #edefee;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.special-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.specials, .online-menu{
+  margin: 12vh auto;
+}
+
+.online-menu{
+  padding: 2.5vh;
+}
+
+.specials{
+  font-size: 200%;
 }
