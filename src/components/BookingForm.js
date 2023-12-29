@@ -11,6 +11,8 @@ export default function BookingForm({ availableTimes, removeTime }){
         occasion: ""
     })
 
+    const [isDisabled, setIsDisabled] = useState(true)
+
     const navigate = useNavigate();
 
     const goConfirm = () => {
@@ -19,6 +21,7 @@ export default function BookingForm({ availableTimes, removeTime }){
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        if(isDisabled) return
 
         const formData = {
             date: e.target.elements['res-date'].value,
@@ -37,6 +40,7 @@ export default function BookingForm({ availableTimes, removeTime }){
 
     const dateOnChange = (e) => {
         console.log(e.target.value)
+        setIsDisabled(prevState => !prevState)
     }
 
     return(
@@ -58,7 +62,7 @@ export default function BookingForm({ availableTimes, removeTime }){
                    <option>Birthday</option>
                    <option>Anniversary</option>
                 </select>
-                <input className="book-button" type="submit" value="Make Your reservation"/>
+                <input className={isDisabled ? "book-button-disabled" : "book-button"} type="submit" value="Make Your reservation"/>
             </form>
         </div>
     )

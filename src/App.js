@@ -5,10 +5,12 @@ import HomePage from './components/HomePage.js';
 import ConfirmedBooking from './components/ConfirmedBooking.js';
 
 function App() {
+
   return (
     <>
     <Router>
       <Routes>
+        <Route index element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/confirm" element={<ConfirmedBooking />} />

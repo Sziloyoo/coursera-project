@@ -4,7 +4,7 @@ export default function ConfirmedBooking (){
 
     return(
         <>
-            <h1>Yoo!</h1>
+            <h1>Your booking has been confirmed!</h1>
         </>
     )
 }
