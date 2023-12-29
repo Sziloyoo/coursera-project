@@ -1,4 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function Main(){
+
+    const navigate = useNavigate();
+
+    const navigateTo = (path) => {
+        navigate(path);
+    };
+
     return(
         <main>
             <div className="col1">
@@ -8,7 +17,7 @@ export default function Main(){
                     We are a family owned Mediterran restaurant,
                     focused on traditional recipes served with a modern twist.
                 </p>
-                <button className="reserve-button">Reserve a Table</button>
+                <button onClick={() => navigateTo('/booking')} className="reserve-button">Reserve a Table</button>
             </div>
             <img src="./restauranfood.jpg" alt="food" className="food-image"/>
         </main>

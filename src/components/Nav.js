@@ -4,11 +4,11 @@ export default function Nav(){
             <img src="./logo.png" alt="logo" className="logo"/>
             <ul>
                 <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/manu">Menu</a></li>
-                <li><a href="/reservations">Reservations</a></li>
-                <li><a href="/order">Order Online</a></li>
-                <li><a href="/login">Login</a></li>
+                <li><a href="/home">About</a></li>
+                <li><a href="/home">Menu</a></li>
+                <li><a href="/booking">Reservations</a></li>
+                <li><a href="/home">Order Online</a></li>
+                <li><a href="/home">Login</a></li>
             </ul>
         </nav>
     );

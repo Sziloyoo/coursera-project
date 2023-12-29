@@ -1,18 +1,19 @@
 import './App.css'
-import Nav from './components/Nav.js'
-import Main from './components/Main.js'
-import Footer from './components/Footer.js'
-import Conatiner from './components/Container.js'
-import Specials from './components/Specials.js'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import BookingPage from './components/BookingPage.js'
+import HomePage from './components/HomePage.js';
+import ConfirmedBooking from './components/ConfirmedBooking.js';
 
 function App() {
   return (
     <>
-      <Nav />
-      <Main />
-      <Specials />
-      <Conatiner />
-      <Footer />
+    <Router>
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/confirm" element={<ConfirmedBooking />} />
+      </Routes>
+    </Router>
     </>
   )
 }

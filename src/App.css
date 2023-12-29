@@ -56,7 +56,7 @@ main{
   padding: 20px;
 }
 
-.reserve-button, .online-menu{
+.reserve-button, .online-menu, .book-button{
   background-color: #f4ce14;
   border: none;
   color: black;
@@ -196,4 +196,18 @@ footer {
 
 .specials{
   font-size: 200%;
+}
+
+.booking-form{
+  display: grid;
+  max-width: 200px;
+  gap: 20px
+}
+
+.booking-form{
+  margin: auto;
+}
+
+.booking-title{
+  margin-left: 35%;
 }
